@@ -1,11 +1,10 @@
 <h1>BU product add</h1>
-
-<?php
-echo "hi";
-?>
 <div class="container">
 
+    <?php
 
+    echo "hi";
+    ?>
     <form method="post">
         <div class="form-group row">
 <!--            <h1>Yangi product </h1>-->
