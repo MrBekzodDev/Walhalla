@@ -1,4 +1,8 @@
 <h1>BU product add</h1>
+
+<?php
+echo "hi";
+?>
 <div class="container">
 
 
