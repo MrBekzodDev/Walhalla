@@ -3,9 +3,6 @@
 namespace controllers;
 
 
-require_once 'path/to/productModel.php';
-require_once 'path/to/commentModel.php';
-
 
 use model\Product;
 use vendor\myframe\Connection;
