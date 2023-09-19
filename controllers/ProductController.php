@@ -49,6 +49,8 @@ class ProductController extends Controller
 
 }
 
+echo "addcoment function";
+
 
 
 
