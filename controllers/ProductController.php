@@ -56,11 +56,11 @@ if(isset($_POST['submit'])){
 
     // Insert comment into database
     $sql = "INSERT INTO comments (name, content) VALUES ('$name', '$content')";
-    if ($conn->query($sql) === TRUE) {
-        echo "Comment added successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+//    if ($conn->query($sql) === TRUE) {
+//        echo "Comment added successfully";
+//    } else {
+//        echo "Error: " . $sql . "<br>" . $conn->error;
+//    }
 }
 
 
