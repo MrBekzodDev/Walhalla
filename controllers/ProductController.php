@@ -3,6 +3,9 @@
 namespace controllers;
 
 
+require_once 'path/to/productModel.php';
+require_once 'path/to/commentModel.php';
+
 
 use model\Product;
 use vendor\myframe\Connection;
@@ -44,3 +47,17 @@ class ProductController extends Controller
     }
 
 }
+
+
+
+
+function addComment(){
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $productId = $_POST['product_id'];
+        $comment = $_POST['comment'];
+
+    }
+}
+
+
+
