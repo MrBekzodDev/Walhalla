@@ -4,6 +4,7 @@ namespace controllers;
 
 
 
+use model\Category;
 use model\Product;
 use vendor\myframe\Connection;
 use vendor\myframe\Controller;
@@ -41,6 +42,19 @@ class ProductController extends Controller
     public function delete(){
 
         $this->view ->render("product/delete");
+
+        $file = 'path/to/file.txt';
+
+        if (file_exists($file)) {
+            if (unlink($file)) {
+                echo 'File deleted successfully.';
+            } else {
+                echo 'Unable to delete the file.';
+            }
+        } else {
+            echo 'File does not exist.';
+        }
+
     }
 
     public function comment(){
