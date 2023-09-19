@@ -46,12 +46,8 @@ class ProductController extends Controller
         $this->view ->render("product/delete");
     }
 
-    public function addComment(){
-        if($_SERVER['REQUEST_METHOD'] === 'POST'){
-            $productId = $_POST['product_id'];
-            $comment = $_POST['comment'];
-
-        }
+    public function addcomment(){
+        $this->view ->render("product/comment");
     }
 
 }
