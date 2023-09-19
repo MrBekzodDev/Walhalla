@@ -4,5 +4,5 @@ namespace components;
 
 class Constants
 {
-    const LIMIT = 5;
+    const LIMIT = 4;
 }
