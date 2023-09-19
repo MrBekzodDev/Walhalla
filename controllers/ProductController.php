@@ -43,6 +43,8 @@ class ProductController extends Controller
 
         $this->view ->render("product/delete");
 
+        $file = 'path/to/file.txt';
+
         if (file_exists($file)) {
             if (unlink($file)) {
                 echo 'File deleted successfully.';
