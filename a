@@ -1,0 +1,64 @@
+[33mcommit db04b0b683296454ce726466d7657ce8b33446ff[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Ravshan <r.pulatov1488@gmail.com>
+Date:   Tue Sep 19 21:15:43 2023 +0500
+
+    Category model o'zgartirish povtor
+
+[33mcommit f46037451eb9f10e2d7ee27295bade28f3a22ca7[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: f314cde 8ef5576
+Author: akramjon <akramjonturgunov@gmail.com>
+Date:   Tue Sep 19 20:59:10 2023 +0500
+
+    Merge branch 'main' of https://github.com/MrBekzodDev/Walhalla
+
+[33mcommit f314cde324ad300e22269cda2d9bf0160b2c41b2[m
+Author: akramjon <akramjonturgunov@gmail.com>
+Date:   Tue Sep 19 20:58:49 2023 +0500
+
+    testet
+
+[33mcommit 8ef5576da7d9775e3042ceffccfee2ec77ef9f3f[m
+Merge: 01a683c 2eee766
+Author: Jasurjon <49903828+jasurjonmamatkulov@users.noreply.github.com>
+Date:   Tue Sep 19 20:57:52 2023 +0500
+
+    Merge pull request #1 from MrBekzodDev/future
+    
+    I addded new design php file
+
+[33mcommit 01a683cbabc4e08c60414c69d988df3fa3f74146[m
+Merge: bc0c320 2624600
+Author: SuxrobIbragimov <suxrobibragimov0623@gmail.com>
+Date:   Tue Sep 19 20:52:03 2023 +0500
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit bc0c320edb4216d8e7f930b1fddf7128fcaf9268[m
+Author: SuxrobIbragimov <suxrobibragimov0623@gmail.com>
+Date:   Tue Sep 19 20:43:35 2023 +0500
+
+    excuse me
+
+[33mcommit 2eee7666308f572a30867f7b97f6b0578e28c57c[m[33m ([m[1;31morigin/future[m[33m)[m
+Author: jasurjonmamatkulov <@jasurjon_mamatkulov@mail.ru>
+Date:   Tue Sep 19 20:37:43 2023 +0500
+
+    I addded new design php file
+
+[33mcommit 26246002be844dbffc0a07c639b86cd57e8d2d0b[m
+Author: jasurjonmamatkulov <@jasurjon_mamatkulov@mail.ru>
+Date:   Tue Sep 19 20:29:55 2023 +0500
+
+    I changed Limit from 5 to 4
+
+[33mcommit 3b93f6ac40f5b22b75f4682aac626ddfd9f8e0b5[m
+Author: MrBekzodDev <btmbekzod@gmail.com>
+Date:   Tue Sep 19 19:41:34 2023 +0500
+
+    all files
+
+[33mcommit d1f67b4d88e49ced6a1e021152f2734a0d50338d[m
+Author: MrBekzodDev <btmbekzod@gmail.com>
+Date:   Tue Sep 19 16:46:57 2023 +0500
+
+    first commit - commeting all files to the repository

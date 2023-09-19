@@ -18,10 +18,11 @@ public $attributes = [];
 //        return $state->fetchAll();
 //    }
 
-    public function addCategory($name){
-        $sqlInsert = "insert into category (name) values (:name)";
+    public function addCategory($name, $description){
+        $sqlInsert = "insert into category (name, description) values (:name, :description)";
         $state = $this->db->prepare($sqlInsert);
         $state->bindValue(":name",$name);
+        $state->bindValue(":description",$description);
         $state->execute();
         if ($state->rowCount() === 0) {
             die("Error inserting data: " . $state->errorInfo()[1]);
@@ -29,12 +30,18 @@ public $attributes = [];
     }
 
     public function updateCategory($id, $name){
-        $sqlUpdate = "update category set name = :name where id = :id";
-        $state = $this->db->prepare($sqlUpdate);
-        $state->bindValue(":id", $id, PDO::PARAM_INT);
-        $state->bindValue("name", $name);
-        $state->execute();
-        header("Location: /category/list"); exit();
+        if (isset($id) && isset($name)){
+            $sqlUpdate = "update category set name = :name where id = :id";
+            $state = $this->db->prepare($sqlUpdate);
+            $state->bindValue(":id", $id, PDO::PARAM_INT);
+            $state->bindValue("name", $name);
+            $state->execute();
+            header("Location: /category/list"); exit();
+        }else{
+            return "Xatolik";
+        }
+
+
     }
 
     public function getCategoryList($page, $withoutLimit = false){

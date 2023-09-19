@@ -48,6 +48,16 @@ class Product extends Model
     }
 
     public function insertCategory(){
+            $sql = "insert into";
+    }
 
+    public function updateDate($id, $floor, $roomNumber)
+    {
+        $sql = "update room_table set floor = :floor, room_number = :roomNumber where id=:id";
+        $stm = $this->db->prepare($sql);
+        $stm->bindParam(":floor", $floor);
+        $stm->bindParam(":roomNumber", $roomNumber);
+        $stm->bindParam(":id", $id);
+        return $stm->execute();
     }
 }
