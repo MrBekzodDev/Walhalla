@@ -10,7 +10,7 @@ use PDO;
 class Category extends Model
 {
 
-
+public $attributes = [];
 //    public function getList(){
 //        $sql = "select * from category";
 //        $state = $this->db->prepare($sql);
@@ -75,5 +75,15 @@ class Category extends Model
         $state -> bindValue(":id", $id, PDO::PARAM_INT);
         $state->execute();
         return $state->fetch(PDO::FETCH_OBJ);
+    }
+
+    //Метод который будет загружат данные из формы регистрации и проверят соответствуюет данные с свойству $attributes
+
+    public function load($data){
+        foreach ($this->attributes as $name => $value){
+            if (isset($data[$name])){
+                $this->attributes[$name] = $data[$name];
+            }
+        }
     }
 }
