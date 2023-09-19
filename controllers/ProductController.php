@@ -43,7 +43,7 @@ class ProductController extends Controller
         $this->view ->render("product/delete");
     }
 
-    public function addcomment(){
+    public function comment(){
         $this->view ->render("product/comment");
     }
 
