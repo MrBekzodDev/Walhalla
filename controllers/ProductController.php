@@ -29,7 +29,7 @@ class ProductController extends Controller
     public function add(){
         if(isset($_POST)){
             $category = new Product();
-            $category->addProduct($_POST[ 'productName', 'categoryName', 'productDescription']);
+    #        $category->addProduct($_POST[ 'productName', 'categoryName', 'productDescription']);
         }
         $this->view ->render("product/add");
     }
