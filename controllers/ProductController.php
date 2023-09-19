@@ -29,7 +29,7 @@ class ProductController extends Controller
     public function add(){
         if(isset($_POST)){
             $category = new Product();
-            $category->addProduct($_POST[ 'productName', 'categoryName', 'productDescription']);
+    #        $category->addProduct($_POST[ 'productName', 'categoryName', 'productDescription']);
         }
         $this->view ->render("product/add");
     }
@@ -43,4 +43,15 @@ class ProductController extends Controller
         $this->view ->render("product/delete");
     }
 
+    public function comment(){
+        $this->view ->render("product/comment");
+    }
+
 }
+
+echo "addcoment function";
+
+
+
+
+
