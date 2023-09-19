@@ -49,6 +49,21 @@ class ProductController extends Controller
 
 }
 
+
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $content = $_POST['content'];
+
+    // Insert comment into database
+    $sql = "INSERT INTO comments (name, content) VALUES ('$name', '$content')";
+    if ($conn->query($sql) === TRUE) {
+        echo "Comment added successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+
 echo "addcoment function";
 
 
