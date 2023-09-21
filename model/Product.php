@@ -29,10 +29,12 @@ class Product extends Model
 
     }
 
-    public function addProduct($productName , $categoryId, $description){
-        $sqlInsert = "insert into product (name),(category_id) values (:name)";
+    public function addProduct($productName, $categoryId, $description){
+        $sqlInsert = "insert into product(name, category_id, description) values (:name, :categoryId, :description)";
         $state = $this->db->prepare($sqlInsert);
         $state->bindValue(":name",$productName);
+        $state->bindValue(":categoryId",$categoryId);
+        $state->bindValue(":description",$description);
         $state->execute();
         if ($state->rowCount() === 0) {
             die("Error inserting data: " . $state->errorInfo()[1]);

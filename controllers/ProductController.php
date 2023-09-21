@@ -17,11 +17,11 @@ class ProductController extends Controller
         if (isset($_GET['page'])){
             $page = $_GET['page'];
         }
-        $result = $product -> getProductList($page);
+        $pageQuantity = $product -> getProductList($page);
         $pageCount = $product -> getPageCount();
         $currentPage = 1;
         $this->view ->render("product/list", [
-            "list" => $result,
+            "list" => $pageQuantity,
             "pageCount"=>$pageCount,
             "currentPage"=>$currentPage
         ]);
